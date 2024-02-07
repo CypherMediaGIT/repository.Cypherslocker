@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.Cypherslocker" name="[COLOR cyan]Cypher Media Repository[/COLOR]" version="4.0.0" provider-name="Cypher">
+<extension point="xbmc.addon.repository" name="Cypher Media Repository">
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/CypherMediaGIT/repository.Cypherslocker/master/addons.xml</info>   <checksum>https://raw.githubusercontent.com/CypherMediaGIT/repository.Cypherslocker/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/CypherMediaGIT/repository.Cypherslocker/master/</datadir>
+    </dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+	<summary>Cypers Locker Repo - Home to Cypher Media</summary>
+	<description>Cypers Locker Repo - Home to Cypher Media.</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+</extension>
+</addon>
+
+<addon id="plugin.video.cypher"                                                                                                                                    
+	   name="Cypher Media"                                                 
+	   version="1.0.0"                                                                                                                                        
+	   provider-name="Cypher">
+  <requires>
+	<import addon="script.module.resolveurl"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension library="resources/modules/" point="xbmc.python.module" />
+  <extension library="resources/sources/" point="xbmc.python.module" />
+  <extension library="resources/" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+	<reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en">Cypher Media Links to TV Shows and Movies Online</summary>
+    <description lang="en">Cypher Media Links to TV Shows and Movies Online it Hosts NO actual files</description>
+	
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+  
+</addon>
+
+</addons>
